@@ -1,0 +1,698 @@
+extends layout
+
+
+block content 
+
+  h1.other Study Page
+  h4 -=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+=-=+-=+
+
+
+  h2 Week 1 Wednesday - basics
+  ul
+      li HTML is a tree
+      ul 
+          li html (the whole webpage)
+          li head   
+          li body 
+  ul
+      li DOM: Document Object Model
+
+
+  br
+  h2 Week 2 Friday: 
+  ul
+      li a list < li > is an HTML element
+      li < li > and < ul > are start tags
+      li < /li > and < /ul > are end tags
+      li The stuff between the start and end tags are the content of the element
+
+  h3 HTML Basic Examples
+  ul 
+      li All HTML documents must start with a document type declaration
+  ul 
+      ul  
+          li < !DOCTYPE html >
+          li Helps browsers to display web pages correctly
+          li NOT case sensitive
+      li The HTML document itself begins with < html > and ends with < /html >
+      li The visibly part of the HTML document is between < body > and < /body >
+
+  h5 Headings
+  ul 
+      li HTML headings are defined with the < h1 > to < h6 > tags
+      li < h1 > defines the most important heading
+      li < h6 > defines the least important heading
+
+  h5 Links
+  ul 
+      li HTML links are defined with the < a > tag
+      li The link's destination is specified in the href attribute
+      li Attributes are used to provide additional information about HTML elements
+
+  h5 Images
+  ul 
+      li HTML images are defined with the < img > tag
+      li The source file (src), alternative text (alt), width, and height are provided as attributes
+      li < img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142" >
+
+  h3 HTML Paragraphs
+  ul
+      li A paragraph always starts on a new line, and is usually a block of text
+      li The HTML < p > element defines a paragraph
+      li Browsers automatically add some white space (a margin) before and after a paragraph
+      li You cannot be sure how HTML will be displayed
+      li Large or small screens, and resized windows will create different results
+      li With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code
+      li The browser will automatically remove any extra spaces and lines when the page is displayed
+
+  h5 HTML Horizontal Rules
+  ul 
+      li The < hr > tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule
+      li The < hr > element is used to separate content (or define a change) in an HTML page
+      li The < hr > tag is an empty tag, which means that it has no end tag
+
+  h5 HTML Line Breaks
+  ul
+      li The HTML < br > element defines a line break
+      li Use < br > if you want a line break (a new line) without starting a new paragraph
+      li The < br > tag is an empty tag, which means that it has no end tag
+
+  h5 The Poem Problem
+  ul
+      li A spaced poem will display on a single line
+      li This can be fixed with < pre >
+      li The HTML < pre > element defines preformatted text
+      li The text inside a < pre > element is displayed in a fixed-width font (usually Courier), and it preserves both spaces and line breaks
+
+  h3 HTML Links
+
+  h5 Hyperlinks
+  ul 
+      li HTML links are hyperlinks
+      li You can click on a link and jump to another document
+      li When you move the mouse over a link, the mouse arrow will turn into a little hand
+
+  h5 Syntax
+  ul
+      li The HTML < a > tag defines a hyperlink
+      li Syntax:
+      ul 
+          li < a href="url" >link text< /a >
+      li The most important attribute of the < a > element is the href attribute, which indicates the link's destination
+      li The 'link text' is the part that will be visible to the reader
+      li Clicking on the link text will send the reader to the specified URL address
+      li By default, links will appear as follows in all browsers:
+      ul 
+          li An unvisited link is underlined and blue
+          li A visited link is underlined and purple
+          li An active link is underlined and red
+
+  h5 The target Attribute
+  ul
+      li By default, the linked page will be displayed in the current browser window
+      li To change this, you must specify another target for the link
+      li The 'target' attribute specifies where to open the linked document
+      li The 'target' attribute can have one of the following values:
+      ul
+          li _self - Default. Opens the document in the same window/tab as it was clicked
+          li _blank - Opens the document in a new window or tab
+          li _parent - Opens the document in the parent frame
+          li _top - Opens the document in the full body of the window
+
+  h5 Absolute URLs vs. Relative URLs
+  ul
+      li The first two examples are using an absolute URL (a full web address) in the href attribute
+      li A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part)
+
+  h5 Using an Image as a Link
+  ul
+      li To use an image as a link, just put the < img > tag inside the < a > tag
+
+  h5 Link to an Email Address
+  ul 
+      li Use mainto: inside the href attribute to create a link that opens the user's email progam (to let them send a new email)
+
+  h5 Button as a Link
+  ul
+      li To use an HTML button as a link, you have to add some JavaScript code
+      li JavaScript allows you to specify what happens at certain events, such as a click of a button
+
+  h5 Link Titles
+  ul 
+      li The 'title' attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the elememt
+
+  h3 HTML Quotation and Citation Elements
+
+  h5 < blockquote > for Quotations
+  ul 
+      li The HTML < blockquote > element defines a section that is quoted from another source
+      li Browsers usually indend < blockquote > elements
+
+  h5 < q > for Short Quotations
+  ul
+      li The HTML < q > tag defines a short quotation
+      li Browsers normally insert quotation marks around the quotation
+
+  h5 < abbr > for Abbreviations
+  ul
+      li The HTML < abbr > tag defines an abbreviation or acronym, like "HTML", "CSS", "Mr.", "ASAP"
+      li Marking abbreviations can give useful information to browsers, translation systems and search-engines
+
+  h5 < address > for Contact Information
+  ul
+      li The HTML < address > tag defines the contact information for tha author/owner of a document or an article
+      li The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+      li The text in the < address > element usually renders in italic, and browsers will always add a line break before and after the < address > element
+
+  h5 < cite > for Work Title
+  ul
+      li The HTML < cite > tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.)
+      li The text in the < cite > element usually renders in italic
+      li NOTE: A person's name is not the title of a work
+
+  h5 < bdo > for Bi-Directional Override
+  ul
+      li BDO stands for Bi-Directional Override
+      li The HTML < bdo > tag is used to override the current text direction
+
+  h3 HTML Headings
+  ul 
+      li HTML headings are titles or subtitles that you want to display on a webpage
+      li Defined with the < h1 > to < h6 > tags
+      li < h1 > defines the most important heading. < h6 > defines the least important heading
+
+  h5 Headings Are Important
+  ul 
+      li Search engines use the headings to index the structure and content of your web pages
+      li Users often skin a page by its headings. It is important to use headings to show the document structure
+
+  h5 Bigger Headings
+  ul
+      li Each HTML heading has a default size. However, you can specify the size for any heading with the 'style' attribute, using the CSS 'font-size' property
+
+
+  br
+  h2 Week 2 Monday - the HTML coding cycle
+
+  h5 "The Cycle"
+  ul 
+      li Edit the source file
+      li Save the source file
+      li Open/reload the source file in a browser
+
+
+  br
+  h2 Week 2 Wednesday - inspector
+  ul 
+      li Editing something within the inspector doesn't edit it within the HTML file
+      li Ex.  < h1 style="background-color: orangered;" >
+      ul 
+          li style="background-color: orangered;"
+          ul 
+              li ^this is the HTML attribute
+          li background-color
+          ul 
+              li ^this is the style name
+          li orangered
+              ul ^this is the style value
+
+
+  br
+  h2 Week 2 Friday - tables
+
+  h5 Creating a Table
+  ul 
+      li All of the table elements go inside < table >
+      li < th > for each table header
+      li < tr > for each table row
+      li < td > for each element of table data
+
+
+  br
+  h2 Week 3 Wednesday - CSS
+  ul 
+      li CSS: Cascading Style Sheets
+      li Three types of CSS:
+      ul 
+          li Inline
+          li Internal
+          li External
+      li Body diagram
+      ul 
+          li HTML
+          ul
+              li Head (not the visible on the webpage)
+              ul 
+                  li CSS
+              li Body
+
+  
+  br
+  h2 Week 3 Friday - more CSS
+
+  h5 Types of CSS identifiers
+  ul 
+      li Element type (h1, h2, li, p)
+      li Element ID (#doge, #george)
+      ul 
+          li Each ID should be unique to one HTML element
+      li Element class (.dog-walker, .dog)
+      ul 
+          li Can be associated with more than one HTML element
+
+  h5 Best Practices:
+  ul 
+      li For multi word IDs and classes
+      ul 
+          li Dog walker -> Dog-walker (kebab-case)
+      li Generally, start with classes & then use ID when necessary
+
+  h5 IDs
+  ul 
+      li Appending #id-name to a URL will jump the page to that element on the page
+
+
+
+  h2 Week 4 Monday - span and div, inline vs. block elements
+
+  h5 Inline elements 
+  ul 
+      li Have no new-line before them when render
+      li Examples:
+      ul 
+          li < a >, < sup >, < span>
+
+  h5 Block elements
+  ul 
+      li Always have a new-line before the contents of the tag
+      li Fill all the horizontal space in the parent element
+      li Always has margin before
+      li Examples:
+      ul 
+          li < h1 >, < div >, < p >, < h2 >
+
+  h5 Spans & divs
+  ul 
+      li They have no style by default
+      li They group sections of the webpage so we can give them certain styles
+
+
+  br
+  h2 Week 5 Monday - box model
+
+  h5 Box model (only for block elements)
+  ul 
+      li width
+      ul
+          li fill the width of the parent container
+      li max-width
+      ul 
+          li good for responsive
+      li height
+      ul 
+          li by default, design height of the content
+      ul 
+            li extra height goes below content
+            li too little height leads to content overflow
+            li overflow:scroll
+      li border-style
+      ul
+          li solid
+          li hiden
+          li dashed
+          li [top, left, bottom, right]
+      li border-width
+      ul 
+          li some px value
+          li [top, left, bottom, right]
+      li border-radius
+      ul 
+          li sharpness of the edges
+      li padding
+      ul  
+          li space between the border and contents
+      li margin
+      ul  
+          li space between the border and the outside of the box
+  
+      li Note: can compress the styles for border, padding & margin into one line (clockwise from the top)
+      br
+      br
+      li Example:
+      ul 
+          li padding-top: 4px;
+          li padding-right: 20px;
+          li padding-bottom: 20px;
+          li padding-left: 20px;
+          ul  
+              li is the same as
+          li padding: 4px 20px 20px 20px;
+
+
+  br
+  h2 Week 6 Monday - flexbox
+
+  h5 Flex Box: critical to responsive web development
+  ul 
+      li Making webpage that looks good on desktop & on mobile devices
+
+
+  br
+  h2 Week 6 Friday - HTTP
+
+  h5 Hypertext Transfer Protocol
+  ul 
+      li Context:
+      ul 
+          li So far, we've been clicking on somefile.html
+          li But when we go to www.google.com, or www.mozilla.org, how do we get the html file?
+      li HTTP:
+      ul 
+          li The file comes from another computer!
+          li Client/server architecture
+          li The client and server use a protocol to talk
+          li The protocol is thr HyperText Transfer Protocol (HTTP)
+      li HTTP Methods:
+      ul 
+          li GET - Request a resource from the server
+          li POST - Update resource on the server
+          li PUT - Idempotent update resource on the server
+          ul 
+              li Idempotency: when you repeat an action, nothing changes after the first request
+          li DELETE - Delete resource
+          li PATCH - Partially modify a resource
+      li Uniform Resource Itentifier:
+      ul 
+          li When you typ in a URI into the browser, you're giving the server a lot of information
+
+  h5 Cookies
+  ul 
+      li Why do we need them?
+      ul 
+          li The request/response cycle by default is stateless
+          li In other words, without cookies, we could not:
+          ul 
+              li Stay logged in to websites
+              li Keep personalization on websites
+              li Track user activities on the web
+      li What is a cookie?
+      ul 
+          li Typically, a state information that a server gives a browser
+          li The browser can use this information to:
+          ul 
+              li Determine if a given browser is logged in or not
+              li Personalize the website for the user
+              li Track individuals on the website
+
+  h5 Security issues with HTTP
+  ul 
+      li HTTP is sent through plain text files
+      ul 
+          li Issue 1: malicious actors could tap into the network to eavesdrop
+          ul 
+              li This can compromise:
+              ul 
+                  li Personal information
+                  li Password
+                  li Credit cards
+          li Issue 2: A webserver could impersonate the website you're trying to access
+      br
+      li HTTPS:
+      ol  
+          li A secure (i.e., encrypted) connection is made between the client and the server
+          li A secure connection is only made if the server is verified
+      br
+      li HTTPS: Benefits
+      ol
+          li Eavesdroppers cannot understand the encrypted connection between the client and server
+          li If a server is trying to impersonate another server, it will be flagged
+  
+
+  br
+  h2 Week 8 Friday - more JavaScript
+  ul 
+      li JavaScript: Why so weird?
+      ul 
+          li Most languages execute synchronously
+          li Ex. C++
+          ul 
+              li int a = 5;
+              li a += 1;
+              li cout << a << endl;
+      li JavaScript mostly runs synchronously
+          ul 
+              li HOWEVER: Sometimes asynchronously
+
+
+  br
+  h2 Week 9 Monday
+  ul 
+      li Plain Text: Any file with unformatted text
+      ul 
+          li Ex. .html, .cpp, .css, .js
+      li Binary File: Every other file that isn't plain text
+      ul 
+          li Ex. .png, .jpeg, .doc, .xlsx
+      li JSON: Java Script Object Notation
+
+
+  br
+  h2 Week 10 - Model View Controller
+
+  h5 Model View Controller
+  ul 
+      li Web pages are created on the fly
+      li Generally, web pages (and UIs) are broken into three parts:
+      li Model: the data of a web page
+      ul 
+          li Data represented in a dedicated data structure
+          li Examples
+          ul 
+              li Databases
+              li Objects (e.g., JSON)
+              li Tables (e.g., CSV, Excel)
+      li View: the visual representation of the data
+      ul 
+          li Provides the visual structure of the data in the model
+          li Typically made up of
+          ul 
+              li HTML
+              li CSS
+              li A templating language
+          li Just visual structure. No behavioural logic
+      li Controller: the behavior of the web page
+      ul 
+          li How the user manipulates the data model through the view
+      br
+      li Example: Printing tweet elements
+      ul 
+          li Template
+          ul 
+              li For each tweet
+              ul 
+                  li Print the time
+                  li Print the user
+                  li Print the tweet
+      br
+      li MVC on real websites
+      ul 
+          li Thin client
+          ul 
+              li Most of the application happens in the server side
+          li Thick client
+          ul 
+              li The client does most of the work (on the browser)
+
+
+  br
+  h2 Week 10 Friday - Templating
+
+  h5 Introduction to Templating
+  ul 
+      li What can templating do?
+      ol
+          li It can clean up your HTML code and put it in a better syntax
+          li Dynamically insert data into your HTML file
+
+  br
+  h2 Week 11 Friday - Express.js/Package managers
+  ul 
+      li Express.js
+      ul 
+          li Model/view/controller
+      li Node.js
+      ul
+          li NPM - Node Package Manager
+      li OS (Windows/MacOS)
+  ul
+      li A package manager installs software for you and manages the versions of the software for you
+  ul
+      li How to install software
+      ul 
+          li Option 1: npm install PACKAGE_NAME
+          ul 
+              li This only installs to your current folder!
+              li Installed in node_modules
+          li Option 2: Write the package in package.json and run "npm install"
+
+
+  br
+  h2 Week 12 Monday 
+  ul 
+      li How Express starts
+      ol 
+          li You click run in VS code
+          li App.js starts running
+          li Libraries are imported
+          li The app object is created to represent our application
+          li Tell app where our views are located
+          li Tell app where our routers are
+          li Wait and listen for requests (neverending while loop)
+      li What happens when the website is visited?
+      ol 
+          li User visits "/" page (index page)
+          li Express looks for a router to that URL (from step 6)
+          li 2 Options: 
+          ul  
+              li If no route gets found, it shows an error message
+              ul 
+                  li Error messages are created with error.pug ... can make funny error messages
+              li The matching router runs
+              ul  
+                  li Either index.js or users.js
+          li Router runs and takes an action
+          li 3 Parts: 
+          ol 
+              li Renders a pug file
+              li Sends a plain HTTP result
+              li Any other action
+
+
+  br
+  h2 Week 12 Friday - Databases
+  ul 
+      li Storing data in source code is
+      ul 
+          li not extensible
+          li not user friendly
+          li not dynamic
+          li hard to work with
+      li Best practice is to use a standalone database
+
+  h5 Databases
+  ul 
+      li Large collections of persistant data
+      li Faster than storing data in plain text
+      li More resilient
+
+  h5 Traditional databases
+  ul 
+      li Called SQL DB
+      li in other words, big tables of data
+      li Examples: MySQL, SQLite, Post gres
+
+  p In this course, we use NoSQL
+  ul 
+      li Alternative DB to SQL
+      li Use MongoDB
+
+
+
+
+
+  br
+  h2 Exam 3 Review 
+
+  h5 Model View Controller (MVC)
+  p Web Pages are created on the fly and broken into three parts
+  ul
+      li Model: the data of a webpage
+      li Examples:
+      ul
+          li Databases, Objects (e.g., JSON), and Tables (e.g., CSV, Excel)
+      br 
+      li View: the visual representation of the data
+      li Provides the visual structure of the data in the model
+      li Typically made up of:
+      ul 
+          li HTML, CSS, and a templating language (such as pug)
+      li Just the visual structure. No behavioral logic
+      br
+      li Controller: the behavior of the web page 
+      li How the user manipulates the data model through the view
+      li Example: A user types a text and hits "send" and the controller updates the model (and therefore view)
+      br
+      li Thin Client: most of the application happens on the server side 
+      li Thick Client: most of the MVC app. happens in the browser 
+      li Mixture: Client updates view + controller, server updates model
+  img(src='images/MVC Chart.png', class="center-image")
+
+  h5 Node Package Manager (NPM)
+  ul 
+      li Used to install packages to current folder 
+      li Installs, updates, and manages dependencies (like package.json files) in Node.js projects 
+      li How to install libraries:
+      img(src="images/npm.png", class="center-image")
+      li What is package.json and how is it used?
+      ul 
+          li A file that holds a project name, version, description, and dependencies (packages)
+          li Used in Express to manage the project's dependencies
+
+  h5 MVC in Express 
+  ul 
+      li Purpose of each file and folder in Express project 
+      img(src="images/MVC Express.png", class="center-image")
+      li Explain the code in app.js
+      ul 
+          li Setting up required modules at the top 
+          li Defining and setting up app use of different routers 
+          li Setting up Express (var app = express();)
+          li Catching, handling, and rendering errors
+      li Explain the code in a router file 
+      ul 
+          li Requiring express and setting up the router object that will define the routes for the given application
+          li Defines the route and requests the root path with '/'
+  ul
+      li Renders the given view with the title and other noted attributes 
+      li Exports the router to be defined and used in other parts of the application 
+
+  h5 Templating Languages 
+  ul 
+      li Converting static HTML to pug, including 
+      ul  
+          li Converting plain HTML elements to Pug 
+          li Converting HTML elements with attributes (classes, ids, style) to pug
+          ul 
+              li HTML: div class="myClass" id="myId" style="color: red;" Hello, World! div
+              li Pug: div.myClass#myId(style="color: red;") Hello, World!
+      li  Rendering a JSON object in a Pug template
+      ul 
+          li Data gets passed into the template from JSON file 
+          li Can be rendered conditionally or in a loop 
+          img(src="images/JSON Rendering.png", class="center-image")
+
+
+
+  div.pug  ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+  div.pug  ⠀⠀⠀⠀⠀⢀⣠⢴⣤⠴⠚⠉⢁⠀⠀⠀⢤⡈⠉⠓⠶⢯⣷⠲⢤⡀⠀⠀⠀⠀⠀⠀⠀
+  div.pug  ⠀⠀⢀⣠⠶⣏⡵⠚⠁⠀⠀⢀⠞⠀⡄⢠⠀⠱⢄⡀⠀⠀⢿⣇⠀⠉⠓⠒⠲⣦⠀⠀⠀
+  div.pug  ⠀⣴⠋⠀⢺⣿⠀⠀⠀⢀⠤⠀⠄⠀⢠⠘⠀⠀⣒⡚⢤⣀⠈⠻⣷⣦⡀⠀⢀⡏⠀⠀⠀
+  div.pug  ⠀⢷⡇⠀⢸⡇⢀⣤⣶⣶⣶⣾⡇⡆⢈⡆⢠⢠⣿⣿⣶⣶⣤⡀⠈⣿⡿⢄⡾⠁⠀⠀⠀
+  div.pug  ⠀⠀⠹⣦⣾⡟⠳⣿⣿⣿⣿⣷⣿⣟⣿⣿⡻⢿⣿⣿⣿⣿⡿⠃⠀⣇⠻⠞⠀⠀⠀⠀⠀
+  div.pug  ⠀⠀⠀⠈⠛⡇⠀⠙⣿⡿⢋⡿⢿⣿⣿⣿⡿⠛⠮⣟⠛⢛⡁⠀⠀⢹⡄⠀⠀⠀⠀⠀⠀
+  div.pug  ⠀⠀⠀⠀⢸⡁⠀⣿⣟⠛⢽⣷⣶⣾⣿⡇⢤⣶⣴⡾⣿⣿⣿⠀⠀⢰⠇⠀⠀⠀⠀⠀⠀
+  div.pug  ⠀⠀⠀⠀⠈⣷⡀⠙⢿⡷⣦⣬⣿⠟⢻⠛⢦⣤⣼⣶⢿⡿⠃⠀⣰⢻⣆⠀⠀⠀⠀⠀⠀
+  div.pug  ⠀⠀⠀⠀⣰⣇⠙⢦⠀⠙⢯⡛⢿⡀⠈⠀⠀⣿⣿⡵⠋⠀⡠⠊⣡⠎⢸⠀⠀⠀⠀⠀⠀
+  div.pug  ⠀⠀⠀⠀⡏⠹⡄⠀⠀⢢⡀⠈⠛⠛⠿⠶⠿⠛⠋⠀⠀⠀⣠⠞⠁⢀⠛⢧⠀⠀⠀⠀⠀
+  div.pug  ⠀⠀⠀⠀⡽⡀⠘⢦⡀⠀⠙⠦⡀⠐⠐⠒⠢⠄⠀⡀⢀⡞⠁⠀⢠⠎⠀⢸⡀⠀⠀⠀⠀
+  div.pug  ⠀⠀⠀⠀⡇⠸⡄⠀⠙⢆⠀⠀⠉⢦⡀⠀⡠⠒⠉⠀⠈⠀⠀⢀⠁⠀⠀⢸⠇⠀⠀⠀⠀
+  div.pug  ⠀⠀⠀⠀⡇⠀⠈⠁⠀⠈⠣⣄⠀⠀⠙⣆⠀⠀⠀⠀⠀⠀⣠⠞⠀⠀⠀⢸⡄⠀⠀⠀⠀
+  div.pug  ⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⡞⢳⠀⠀⠀⠀
+  div.pug  ⠀⠀⠀⠀⣿⠂⠀⠀⠀⠀⠠⠤⠤⠒⠃⠀⠓⠤⠤⠀⠀⡀⠀⠀⠀⠀⠀⣇⣘⣆⠀⠀⠀
+  div.pug  ⠀⠀⠀⠀⡟⠀⠀⠀⣴⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⡄⠀⠀⠀⠀⢹⠀⠈⢧⠀⠀
+  div.pug  ⠀⠀⠀⠀⡇⠀⠀⢸⡿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⡄⠀⠀⠀⡇⠀⠀⠸⡆⠀
+  div.pug  ⠀⠀⠀⠀⡇⠀⠀⠈⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⡇⠀⠀⠀⡇⠀
+  div.pug  ⠀⠀⠀⢠⡇⠀⠀⢀⡾⣈⢧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀⠀⢸⡇⠀⢀⣼⠁⠀
+  div.pug  ⢀⣤⣖⡋⠀⠀⠀⣼⢁⡬⠀⣹⠦⢄⣀⠀⠀⠀⠀⣀⣀⠤⣾⠀⠀⠀⢸⡧⠤⠞⡧⢄⡀
+  div.pug  ⢸⣿⣏⣀⡇⢀⡼⠛⠚⠛⠊⠁⠀⠀⠀⠉⠉⠉⠉⠀⠀⠀⢿⣀⠀⣀⠘⡟⣶⣄⢑⣦⠗
+  div.pug  ⠀⠈⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⠦⠼⠶⠛⠉⠈⠉⠀⠀

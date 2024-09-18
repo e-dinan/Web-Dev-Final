@@ -1,0 +1,146 @@
+extends layout
+
+block content
+
+    head
+    title ECCS 2441: Web Development
+    h1.other ECCS 2441: Web Development
+
+    ol
+        li
+            | Click 
+            a(href='#general-information') here
+            |  for General Information
+        li
+            | Click 
+            a(href='#course-objectives') here
+            |  for Course Objectives
+        li
+            | Click 
+            a(href='#course-format') here
+            |  for Course Format
+        li
+            | Click 
+            a(href='#acedemic-honesty') here
+            |  for Acemdemic honesty
+        li
+            | Click 
+            a(href='#generating-ai') here
+            |  for Generating AI
+        li
+            | Click 
+            a(href='#late-policy') here
+            |  for Late Policy
+    // ***** General info *****
+    h2.other#general-information  General information:
+    table.syl
+        tr.syl
+            td.table1 Instructor 
+            td.table2  Ian Kropp
+        tr.syl
+            td.table3  Email
+            td.table4  i-kropp@onu.edu
+        tr.syl
+            td.table1  Class times
+            td.table2  M-W-F: 9:00 to 9:50
+        tr.syl
+            td.table3  Office hours
+            td.table4
+                ul
+                    li.table4   Monday: 3 to 4PM           
+                    li.table4   Tuesday: 9 to 11AM, 2PM-3PM         
+                    li.table4   Wednesday: 1-2PM        
+        tr.syl
+            td.table1  Office
+            td.table2  Kennedy 242
+        tr.syl
+            td.table3  Classroom
+            td.table4  Kennedy 307
+        tr.syl
+            td.table1  Required Textbooks
+            td.table2  None
+        tr.syl
+            td.table3 Mini-midterms (non-cumulative)
+            td.table4
+                ul
+                    li.table4  Midterm 1: September 22nd 
+                    li.table4  Midterm 2: TBA
+                    li.table4  Midterm 3: TBA
+        tr.syl
+            td.table5 --------------------------
+            td.table5 -----------------------------
+    // ***** Course objectives *****
+    h2.other#course-objectives  Course Objectives
+    p.syl By the end of this semester, you should be able to:
+    // Nested course objective list
+    ol
+        li.main-list
+            | Work with ambiguous client requirements in order to create a full stack web application with 
+            ul
+                li.side-list  HTML
+                li.side-list  CSS
+                li.side-list  JavaScript
+        li.main-list
+            | Understand HTTP well enough to 
+            ul
+                li.side-list  Debug broken websites
+                li.side-list  Optimize poorly performing websites
+                li.side-list  API calls to client specifications
+                li.side-list  Choose the appropriate HTTP method for appropriate scenarios
+                li.side-list  Describe to a lay person the benefits of HTTPS
+        li.main-list Create accessible web applications
+    // ***** Course format *****
+    h2.other#course-format  Course Format
+    p.syl This course is going to go beyond the traditional lecture format, and will at times include:
+    ul
+        li.side-list  Lab-based lectures 
+        li.side-list  Student lead learning
+        li.side-list  Ambiguous real-world engineering problems
+    // ***** Academic honesty *****
+    h2.other#acedemic-honesty  Academic Honesty
+    p.syl For individual assignments, I expect you to complete the work entirely by yourself. Passing someone else's work as your own will not be tolerated. However, I encourage you to discuss course topics with me or your peers! Often all it takes to understand a topic is to talk it through with someone else. If you're unclear about this distinction, I'd be happy to talk it over with you.
+    // Generative AI
+    h2.other#generating-ai  Generative AI
+    p.syl Generative AI tools, such as ChatGPT, are extremely beneficial to learning and coding. In fact, I encourage you to use generative AI for the following use cases:
+    ul
+        li.main-list
+            | As a virtual tutor to clarify course concepts
+        ul
+            li.side-list  e.g., how do I import CSS into my web page?
+            li.side-list  e.g., why is HTTPS an important protocol?
+        li.main-list
+            | As a code reviewer
+        ul
+            li.side-list
+            | i.e., pasting your code into a chat service to get feedback on your code
+        li.main-list  Explaining code snippets that you don't understand
+        ul
+            li.side-list
+            | e.g., "why does every web page start with 
+            code &lt;!DOCTYPE html&gt;
+            | ?""
+    p.syl On the other hand, generative AI output is often very incorrect, so I encourage you to cross reference its output. Also, just as you shouldn't copy off of a fellow student, don't copy off of ChatGPT. In short, avoid:
+    ul
+        li.side-list  Directly copying and pasting entire programs from generative AI models
+        li.side-list  Using code from generative AI models that you don't understand.
+    p.syl In other words, treat generative AI as a classmate: someone you can discuss course topics with, but don't copy and paste their work or copy off of their work during an exam.
+    // ***** Late Policy *****
+    h2.other#late-policy  Late Policy
+    ul
+        li.main-list
+            | If you feel that you cannot finish an assignment well before the due date, then please contact
+            | me, and we can discuss whether or not an extension is feasible. You must contact far ahead of
+            | the due date (i.e., don't wait until 5 minutes before the assignment due date). Extensions will
+            | ultimately be under my discretion. Examples of excuses are:
+        ul
+            li.side-list   Family emergencies                    
+            li.side-list   Heath emergencies                     
+            li.side-list   Extraordinary work loads              
+        li.main-list
+            | You can have 1 freebie assignment extension that you may use to add one extra week to any
+            | assignment without any excuse. Use this wisely!
+        li.main-list
+            | All unexcused assignment grades will be reduced by 30% every day past its due date.
+    h2.other  Other Course policies
+    p.syl See other common course policies 
+    a(href='https://my.onu.edu/registrars_office/policies') Click here

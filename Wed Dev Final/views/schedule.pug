@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  h1.other Class Schedule!
+
+  br
+  br
+  br
+
+  table.center
+   tr.center
+    th.center Week
+    th.center Day of Week 
+    th.center Topic
+   for day in schedule
+    tr.center 
+     td.center #{day.week}
+     td.center #{day.dow}
+     td.center !{day.topic}
